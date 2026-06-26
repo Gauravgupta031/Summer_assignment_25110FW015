@@ -5,13 +5,13 @@ int main(){
     printf("enter the number ");
     scanf("%d",&n);
 
-    temp = n ;                           // using temp so that value of n remains original for later comparison
+    temp = n ;                           // sum of factorial of all digits
 
     while(n>0){
         rem = n % 10 ;                 // gets last digit
     fact = 1;
     
-    for(int i = 1;i<= rem ; i++){         // temp changes but n remains same
+    for(int i = 1;i<= rem ; i++){         // n changes but temp remains same
      fact = fact * i ;
     }
     sum = sum + fact ;
