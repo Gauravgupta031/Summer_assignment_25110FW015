@@ -6,21 +6,21 @@ int main(){
     scanf("%d%d",&start,&end);
     printf("prime numbers are \n");
 
-    for(int i = start ; i<= end ; i++){
-        prime = 1;
-        if(i<2){          // 1 is not a prime number
-        prime = 0;           // false 
+    for(int n = start ; n<= end ; n++){
+        prime = 0;
+        if(n<2){          // 1 is not a prime number
+        prime = 1;           // false 
         }
 
-    for(int j = 2 ; j<= i/2 ; j++ ){     // i/2 for less time running
-        if(i%j == 0){                    // j<= i is also correct but less efficient
-            prime = 0;           // false
+    for(int i = 2 ; i<= n/2 ; i++ ){     // n/2 for less time running
+        if(n%i == 0){                    // i<= n is also correct but less efficient
+            prime = 1;           // false
            break;                // composite number
     }
     }
 
-    if(prime == 1){                // true
-    printf("%d ",i);           // print prime number
+    if(prime == 0){                // true
+    printf("%d ",n);           // print prime number
     }
     }
 
