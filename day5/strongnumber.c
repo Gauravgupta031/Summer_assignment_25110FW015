@@ -7,17 +7,17 @@ int main(){
 
     temp = n ;                           // using temp so that value of n remains original for later comparison
 
-    while(temp>0){
-        rem = temp % 10 ;                 // gets last digit
+    while(n>0){
+        rem = n % 10 ;                 // gets last digit
     fact = 1;
     
     for(int i = 1;i<= rem ; i++){         // temp changes but n remains same
      fact = fact * i ;
     }
     sum = sum + fact ;
-    temp /= 10 ;                         // removes last digit
+    n /= 10 ;                         // removes last digit
 }
-if(sum == n){
+if(sum == temp){
 printf("strong number ");
 }
 else{
