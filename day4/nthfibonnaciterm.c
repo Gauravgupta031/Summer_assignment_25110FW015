@@ -18,7 +18,7 @@ int main(){
             a = b;                         // a = previous term
             b = c;                         // b = current term
         }    
-            printf("nth fibonnaci term = %d ", c);
+            printf("nth fibonnaci term = %d ", b);
     
 }
     return 0;
