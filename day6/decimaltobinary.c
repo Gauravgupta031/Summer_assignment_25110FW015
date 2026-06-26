@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n, binary[20], i = 0;
+    int n, binary[20], i = 0,j ;
 
     printf("Enter a decimal number: ");
     scanf("%d", &n);
@@ -14,9 +14,9 @@ int main()
     }
      printf("Binary number = ");
 
-    for(i = i - 1; i >= 0; i--)
+    for(j = i - 1; j >= 0; j--)
     {
-        printf("%d ", binary[i]);            // Print in reverse order
+        printf("%d ", binary[j]);            // Print in reverse order
     }
     return 0;
 }
